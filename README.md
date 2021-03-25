@@ -15,3 +15,6 @@ OpenJDK-11 | Intellij-IDEA | PostgreSQL | JUnit5 | Mockito | Hamcrest | Maven | 
 
 Configuration - Swagger
 
+
+
+1) Criar os profiles dev, prod e test
