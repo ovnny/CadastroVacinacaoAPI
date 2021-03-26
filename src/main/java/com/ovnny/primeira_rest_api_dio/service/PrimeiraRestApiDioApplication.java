@@ -1,4 +1,4 @@
-package com.ovnny.primeira_rest_api_dio;
+package com.ovnny.primeira_rest_api_dio.service;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
