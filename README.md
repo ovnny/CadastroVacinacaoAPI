@@ -87,6 +87,25 @@ Primeiro iremos configurar os profiles pra definir o escopo de cada parte da apl
 	spring.datasource.password=<SECRET_PASS>
 
 
+Overview da Aplicação
+=======================================================================
 
+### Entidade(model)
 
+Modela atores do domínio em questão.
+ex: funcionário, cerveja, caminhão, colaborador, funcionário, etc.
+
+### Repository
+
+Gerencia o banco de dados com objeto DAO
+
+### Service
+
+Todas as regras de negócio
+
+### Controller
+
+Mappeamento http da API 
+
+---
 
