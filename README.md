@@ -108,4 +108,20 @@ Todas as regras de negócio
 Mappeamento http da API 
 
 ---
+/home/ovnny/Desktop/github/primeira_rest_api_dio/src/main/java/com/ovnny/primeira_rest_api_dio
 
+-------------------------------------------------------------------------------
+
+
+org.postgresql.util.PSQLException: FATAL: password authentication failed for user 
+"<USERNAME-PROD>"
+
+org.postgresql.util.PSQLException: FATAL: password authentication failed for user 
+"<USERNAME-PROD>"
+
+org.springframework.beans.factory.BeanCreationException: 
+Error creating bean with name 'entityManagerFactory' defined in class path resource
+[org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: 
+Invocation of init method failed; nested exception is 
+org.hibernate.service.spi.ServiceException: Unable to create requested service
+[org.hibernate.engine.jdbc.env.spi.JdbcEnvironment]
