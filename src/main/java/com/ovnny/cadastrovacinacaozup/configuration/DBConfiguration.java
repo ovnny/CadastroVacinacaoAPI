@@ -1,4 +1,4 @@
-package com.ovnny.primeira_rest_api_dio.configuration;
+package com.ovnny.cadastrovacinacaozup.configuration;
 
 import org.springframework.boot.context.properties.ConfigurationProperties;
 
