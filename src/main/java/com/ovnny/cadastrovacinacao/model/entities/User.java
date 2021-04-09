@@ -2,6 +2,7 @@ package com.ovnny.cadastrovacinacao.model.entities;
 
 import javax.persistence.*;
 import java.time.LocalDateTime;
+import java.util.Objects;
 
 @Entity
 @Table(name = "user")
@@ -59,5 +60,31 @@ public class User {
 
     private void setIsRiskGroup(Boolean riskGroup) {
         isRiskGroup = riskGroup;
+    }
+
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        User user = (User) o;
+        return id.equals(user.id) && nome.equals(user.nome) && email.equals(user.email) && cpf.equals(user.cpf) && dataNascimento.equals(user.dataNascimento) && isRiskGroup.equals(user.isRiskGroup);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(id, nome, email, cpf, dataNascimento, isRiskGroup);
+    }
+
+    @Override
+    public String toString() {
+        return "User{" +
+                "id=" + id +
+                ", nome='" + nome + '\'' +
+                ", email='" + email + '\'' +
+                ", cpf='" + cpf + '\'' +
+                ", dataNascimento=" + dataNascimento +
+                ", isRiskGroup=" + isRiskGroup +
+                '}';
     }
 }

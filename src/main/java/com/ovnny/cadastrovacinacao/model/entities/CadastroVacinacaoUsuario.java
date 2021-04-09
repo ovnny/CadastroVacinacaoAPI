@@ -61,4 +61,29 @@ public class CadastroVacinacaoUsuario {
     private LocalDateTime setDataVacinacao() {
         return LocalDateTime.now();
     }
+
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        CadastroVacinacaoUsuario that = (CadastroVacinacaoUsuario) o;
+        return cadastroID.equals(that.cadastroID) && userID.equals(that.userID) && vacina.equals(that.vacina) && email.equals(that.email) && dataVacinacao.equals(that.dataVacinacao);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(cadastroID, userID, email);
+    }
+
+    @Override
+    public String toString() {
+        return "CadastroVacinacaoUsuario{" +
+                "cadastroID=" + cadastroID +
+                ", userID=" + userID +
+                ", vacina='" + vacina + '\'' +
+                ", email='" + email + '\'' +
+                ", dataVacinacao=" + dataVacinacao +
+                '}';
+    }
 }
