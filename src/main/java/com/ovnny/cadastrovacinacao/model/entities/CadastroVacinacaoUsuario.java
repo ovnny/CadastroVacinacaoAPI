@@ -1,6 +1,6 @@
-package com.ovnny.cadastrovacinacaozup.model.entities;
+package com.ovnny.cadastrovacinacao.model.entities;
 
-import com.ovnny.cadastrovacinacaozup.model.enums.VacinaTipo;
+import com.ovnny.cadastrovacinacao.model.enums.VacinaTipo;
 
 import javax.persistence.*;
 import java.time.LocalDateTime;

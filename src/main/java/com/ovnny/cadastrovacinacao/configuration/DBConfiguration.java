@@ -1,4 +1,4 @@
-package com.ovnny.cadastrovacinacaozup.configuration;
+package com.ovnny.cadastrovacinacao.configuration;
 
 import org.springframework.boot.context.properties.ConfigurationProperties;
 

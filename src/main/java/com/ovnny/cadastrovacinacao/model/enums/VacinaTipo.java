@@ -1,4 +1,4 @@
-package com.ovnny.cadastrovacinacaozup.model.enums;
+package com.ovnny.cadastrovacinacao.model.enums;
 
 public enum VacinaTipo {
     CORONAVAC,

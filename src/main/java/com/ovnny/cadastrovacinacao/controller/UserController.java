@@ -1,7 +1,7 @@
-package com.ovnny.cadastrovacinacaozup.controller;
+package com.ovnny.cadastrovacinacao.controller;
 
-import com.ovnny.cadastrovacinacaozup.model.entities.User;
-import com.ovnny.cadastrovacinacaozup.repository.UserRepository;
+import com.ovnny.cadastrovacinacao.model.entities.User;
+import com.ovnny.cadastrovacinacao.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;

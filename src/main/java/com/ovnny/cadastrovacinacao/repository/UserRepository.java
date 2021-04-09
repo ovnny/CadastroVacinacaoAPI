@@ -1,6 +1,6 @@
-package com.ovnny.cadastrovacinacaozup.repository;
+package com.ovnny.cadastrovacinacao.repository;
 
-import com.ovnny.cadastrovacinacaozup.model.entities.User;
+import com.ovnny.cadastrovacinacao.model.entities.User;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 public interface UserRepository extends JpaRepository<User, Long> {

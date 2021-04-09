@@ -1,4 +1,4 @@
-package com.ovnny.cadastrovacinacaozup.model.entities;
+package com.ovnny.cadastrovacinacao.model.entities;
 
 import javax.persistence.*;
 import java.time.LocalDateTime;
