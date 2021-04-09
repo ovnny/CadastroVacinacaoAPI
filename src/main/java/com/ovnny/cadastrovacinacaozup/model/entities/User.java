@@ -1,13 +1,10 @@
-package com.ovnny.primeira_rest_api_dio.model;
+package com.ovnny.cadastrovacinacaozup.model.entities;
 
-import javax.persistence.Column;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import javax.persistence.*;
 import java.text.DateFormat;
 
+@Entity
 public class User {
-
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
@@ -24,8 +21,8 @@ public class User {
     @Column(nullable = false)
     final DateFormat dataNascimento;
 
-    @Column(nullable = false)
-    private Boolean isRiskGroup = false;
+    @Column(nullable = false, columnDefinition = "boolean default false")
+    private Boolean isRiskGroup;
 
     public User(String nome, String email, String cpf, DateFormat dataNascimento) {
         this.nome = nome;
@@ -42,7 +39,6 @@ public class User {
         return nome;
     }
 
-
     private String getEmail() {
         return email;
     }
@@ -53,6 +49,9 @@ public class User {
 
     private DateFormat getDatanascimento() {
         return dataNascimento;
+    }
 
+    private Boolean setIsRiskGroup() {
+        return true;
     }
 }

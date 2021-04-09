@@ -11,10 +11,10 @@
 	</parent>
 
 	<groupId>com.ovnny</groupId>
-	<artifactId>primeira_rest_api_dio</artifactId>
+	<artifactId>cadastrovacinacaozup</artifactId>
 	<version>0.0.1</version>
-	<name>primeira_rest_api_dio</name>
-	<description>A pratical project about unit test on REST APIs - Digital Innovation One - Inter - Java</description>
+	<name>cadastrovacinacaozup</name>
+	<description>Teste para ingresso no Orange Talents da Zup</description>
 
 	<properties>
 		<java.version>11</java.version>
@@ -59,12 +59,6 @@
 			<groupId>org.postgresql</groupId>
 			<artifactId>postgresql</artifactId>
 			<scope>runtime</scope>
-		</dependency>
-
-		<dependency>
-			<groupId>org.projectlombok</groupId>
-			<artifactId>lombok</artifactId>
-			<optional>true</optional>
 		</dependency>
 
 		<!-- https://mvnrepository.com/artifact/org.hibernate/hibernate-core -->
