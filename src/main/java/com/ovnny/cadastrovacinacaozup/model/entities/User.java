@@ -1,10 +1,12 @@
 package com.ovnny.cadastrovacinacaozup.model.entities;
 
 import javax.persistence.*;
-import java.text.DateFormat;
+import java.time.LocalDateTime;
 
 @Entity
+@Table(name = "user")
 public class User {
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
@@ -19,12 +21,12 @@ public class User {
     final String cpf;
 
     @Column(nullable = false)
-    final DateFormat dataNascimento;
+    final LocalDateTime dataNascimento;
 
     @Column(nullable = false, columnDefinition = "boolean default false")
     private Boolean isRiskGroup;
 
-    public User(String nome, String email, String cpf, DateFormat dataNascimento) {
+    public User(String nome, String email, String cpf, LocalDateTime dataNascimento) {
         this.nome = nome;
         this.email = email;
         this.cpf = cpf;
@@ -47,11 +49,15 @@ public class User {
         return cpf;
     }
 
-    private DateFormat getDatanascimento() {
+    private LocalDateTime getDatanascimento() {
         return dataNascimento;
     }
 
-    private Boolean setIsRiskGroup() {
-        return true;
+    private Boolean getIsRiskGroup() {
+        return isRiskGroup;
+    }
+
+    private void setIsRiskGroup(Boolean riskGroup) {
+        isRiskGroup = riskGroup;
     }
 }
