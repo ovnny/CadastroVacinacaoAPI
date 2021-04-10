@@ -12,7 +12,7 @@ public class CadastroVacinacaoUsuario {
 
     @Id
     @GeneratedValue(strategy = GenerationType.SEQUENCE)
-    Long cadastroID;
+    Long vacinacaoID;
 
     @Column(unique = true)
     @JoinColumn(name = "email")
@@ -68,18 +68,18 @@ public class CadastroVacinacaoUsuario {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         CadastroVacinacaoUsuario that = (CadastroVacinacaoUsuario) o;
-        return cadastroID.equals(that.cadastroID) && userID.equals(that.userID) && vacina.equals(that.vacina) && email.equals(that.email) && dataVacinacao.equals(that.dataVacinacao);
+        return vacinacaoID.equals(that.vacinacaoID) && userID.equals(that.userID) && vacina.equals(that.vacina) && email.equals(that.email) && dataVacinacao.equals(that.dataVacinacao);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(cadastroID, userID, email);
+        return Objects.hash(vacinacaoID, userID, email);
     }
 
     @Override
     public String toString() {
         return "CadastroVacinacaoUsuario{" +
-                "cadastroID=" + cadastroID +
+                "vacinacaoID=" + vacinacaoID +
                 ", userID=" + userID +
                 ", vacina='" + vacina + '\'' +
                 ", email='" + email + '\'' +
